@@ -15,8 +15,8 @@
 - Glob
 - Math
 ### 文件架构
-- `perspective_transform.py`：读取标定用照片，计算相机参数矩阵，在读取识别用照片，对识别用照片进行去畸变和透视变换。
-- `recognition.py`：读取识别用照片，进行放缩、裁剪、整体嵌套边缘识别（HED）、霍夫圆识别、筛选、计算误差。
+- `perspective_transform.py`：读取标定用照片，计算相机参数矩阵，在读取识别用照片，对识别用照片进行去畸变和透视变换。支持批量读取识别用文件。
+- `recognition.py`：读取识别用照片，进行放缩、裁剪、整体嵌套边缘识别（HED）、霍夫圆识别、筛选、计算误差。支持批量读取识别用文件。
 - `hed_pretrained_bsds.caffemodel`：HED的caffe神经网络模型。
 - `deploy.prototxt`：HED模型的配置文件。
 ### 测试用机制
